@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Hello World Bing Maps</title>
+	</head>
+	<body onload="getMap()">
+		<div id="bingMap"></div>
+
+		<!-- JS -->
+		<script src="http://ecn.dev.virtualearth.net/mapcontrol/mapcontrol.ashx?v=7.0"></script>
+		<script>
+			function getMap() {
+				var map = new Microsoft.Maps.Map(document.getElementById('bingMap'), {
+					credentials: 'Your Bing Maps Key',
+					center: new Microsoft.Maps.Location(45.5, -122.5),
+					mapTypeId: Microsoft.Maps.MapTypeId.road,
+					zoom: 7
+				});
+			}
+		</script>
+	</body>
+</html>
