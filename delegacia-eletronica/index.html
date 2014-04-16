@@ -1,0 +1,62 @@
+<!doctype html>
+	<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>Delegacia Eletrônica</title>
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="css/styles.css">
+	</head>
+	<body>
+		<div class="container">
+			<h1>Delegacia Eletrônica</h1>
+
+			<div id="mensagem"></div>
+			
+			<form name="form-denuncia" id="form-denuncia">
+				<fieldset>
+					<legend>Dados Pessoais</legend>
+					<label for="nome">Nome:</label>
+					<input type="text" name="nome" id="nome" class="input-lg">
+
+					<label for="cpf">CPF:</label>
+					<input type="text" name="cpf" id="cpf" class="input-lg">
+				</fieldset>
+
+				<fieldset>
+					<legend>Reivindicação</legend>
+					<label for="natureza">Natureza:</label>
+					<input type="text" name="natureza" id="natureza" class="input-lg" value="Denúncia" disabled>
+
+					<label for="reivindicacao">Reivindicação:</label>
+					<input type="text" name="reivindicacao" id="reivindicacao" class="input-lg" placeholder="Digite a sua denúncia">
+				</fieldset>
+
+				<button type="button" name="cadastrar" id="cadastrar" class="btn">Cadastrar Denúncia</button>
+				<button type="button" name="limpar-campos" id="limpar-campos" class="btn">Limpar Campos</button>
+			</form>
+		</div>
+
+		<div class="container">
+			<table id="lista-denuncias" class="table-sexy">
+				<thead>
+					<tr>
+						<th>Nome</th>
+						<th>CPF</th>
+						<th>Natureza</th>
+						<th>Reivindicação</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td colspan="4">Nenhuma denúncia cadastrada :(</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		
+		<!-- JavaScript -->
+		<script src="http://cdn.jsdelivr.net/pouchdb/2.1.0/pouchdb.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
