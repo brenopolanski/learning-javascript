@@ -17,10 +17,10 @@
 				<fieldset>
 					<legend>Dados Pessoais</legend>
 					<label for="nome">Nome:</label>
-					<input type="text" name="nome" id="nome" class="input-lg">
+					<input type="text" name="nome" id="nome" class="input-lg" autofocus required>
 
 					<label for="cpf">CPF:</label>
-					<input type="text" name="cpf" id="cpf" class="input-lg">
+					<input type="text" name="cpf" id="cpf" class="input-lg" required>
 				</fieldset>
 
 				<fieldset>
@@ -29,11 +29,11 @@
 					<input type="text" name="natureza" id="natureza" class="input-lg" value="Denúncia" disabled>
 
 					<label for="reivindicacao">Reivindicação:</label>
-					<input type="text" name="reivindicacao" id="reivindicacao" class="input-lg" placeholder="Digite a sua denúncia">
+					<input type="text" name="reivindicacao" id="reivindicacao" class="input-lg" placeholder="Digite a sua denúncia" required>
 				</fieldset>
 
-				<button type="button" name="cadastrar" id="cadastrar" class="btn">Cadastrar Denúncia</button>
-				<button type="button" name="limpar-campos" id="limpar-campos" class="btn">Limpar Campos</button>
+				<button type="submit" name="cadastrar" id="cadastrar" class="btn">Cadastrar Denúncia</button>
+				<button type="reset" name="limpar-campos" id="limpar-campos" class="btn">Limpar Campos</button>
 			</form>
 		</div>
 
