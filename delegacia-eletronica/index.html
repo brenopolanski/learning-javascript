@@ -38,7 +38,7 @@
 		</div>
 
 		<div class="container">
-			<table id="lista-denuncias" class="table-sexy">
+			<table id="lista-denuncias" class="table-denuncias">
 				<thead>
 					<tr>
 						<th>Nome</th>
@@ -47,10 +47,7 @@
 						<th>Reivindicação</th>
 					</tr>
 				</thead>
-				<tbody>
-					<tr>
-						<td colspan="4">Nenhuma denúncia cadastrada :(</td>
-					</tr>
+				<tbody id="listar">
 				</tbody>
 			</table>
 		</div>
@@ -58,5 +55,8 @@
 		<!-- JavaScript -->
 		<script src="http://cdn.jsdelivr.net/pouchdb/2.1.0/pouchdb.min.js"></script>
 		<script src="js/main.js"></script>
+		<script>
+			app.showDenuncias();
+		</script>
 	</body>
 </html>

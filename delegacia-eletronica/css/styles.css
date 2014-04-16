@@ -52,28 +52,29 @@ label {
 	box-shadow: 2px 2px #AAA;
 }
 
-.table-sexy {
+.table-denuncias {
 	font-size: 12px;
 	width: 100%;
 	text-align: left;
 	border-collapse: collapse;
-	border: 1px solid #69C;
+	border: 2px solid #888;
 }
 
-.table-sexy th {
+.table-denuncias th {
 	font-weight: normal;
 	font-size: 14px;
-	color: #039;
-	border-bottom: 1px dashed #69C;
+	color: #000;
+	font-weight: bold;
+	border-bottom: 1px dashed #888;
 	padding: 12px 17px;
 }
 
-.table-sexy td {
-	color: #669;
+.table-denuncias td {
+	color: #333;
 	padding: 7px 17px;
 }
 
-.table-sexy tbody tr:hover td {
-	color: #339;
-	background: #D0DAFD;
+.table-denuncias tbody tr:hover td {
+	color: #333;
+	background: #F0F0F0;
 }
