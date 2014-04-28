@@ -1,0 +1,43 @@
+<!doctype html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Hello World WinJS</title>
+
+		<!-- CSS -->
+		<link rel="stylesheet" href="../lib/winjs/css/ui-dark.css">
+		<link rel="stylesheet" href="css/styles.css">
+	</head>
+	<body>
+		<!-- Simple template for the ListView instantiation -->
+		<div id="smallListIconTextTemplate" data-win-control="WinJS.Binding.Template" style="display:none">
+			<div class="smallListIconTextItem">
+				<img src="#" class="smallListIconTextItem-Image" data-win-bind="src: picture">
+				<div class="smallListIconTextItem-Detail">
+					<h4 data-win-bind="textContent: title"></h4>
+					<h6 data-win-bind="textContent: text"></h6>
+				</div>
+			</div>
+		</div>
+
+		<!-- The declarative markup necesary for ListView instantiation -->
+		<!-- Call WinJS.UI.processAll() in your initialization code -->
+		<div id="listView"
+			 class="win-selectionstylefilles"
+			 data-win-control="WinJS.UI.ListView"
+			 data-win-options="{
+			 	itemDataSource: Sample.ListView.data.dataSource,
+			 	itemTemplate: smallListIconTextTemplate,
+			 	selectionMode: 'none',
+			 	tapBehavior: 'none',
+			 	swipeBehavior: 'none',
+			 	layout: { type: WinJS.UI.ListLayout }
+		}">
+		</div>
+		
+		<!-- JS -->
+		<script src="../lib/winjs/js/base.js"></script>
+		<script src="../lib/winjs/js/ui.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
