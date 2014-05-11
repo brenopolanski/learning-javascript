@@ -1,5 +1,11 @@
 # Learning JavaScript
 
+<img
+    src="https://raw.githubusercontent.com/brenopolanski/learning-javascript/master/icon-javascript.png"
+    alt="Icon JavaScript"
+    align="right"
+/>
+
 My studies with JavaScript.
 
 ## Contributing
