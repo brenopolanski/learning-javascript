@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>>Backbone Tutorial Series Part 2 - View</title>
+</head>
+<body>
+	<!-- JS -->
+	<script src="../../lib/jquery.min.js"></script>
+	<script src="../../lib/underscore-min.js"></script>
+	<script src="../../lib/backbone-min.js"></script>
+	<script src="PostView.js"></script>
+	
+	<!-- Example -->
+	<script>
+		$(function() {
+			var postView = new PostView();
+			postView.render();
+			$('body').append(postView.el);
+		});
+	</script>
+</body>
+</html>
