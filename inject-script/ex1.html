@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Inject JavaScript</title>
+</head>
+<body>
+	<script>
+		function injectScript(source) {
+			var elem = document.createElement('script');
+			elem.type = 'text/javascript';
+			elem.innerHTML = source;
+			document.documentElement.appendChild(elem);
+		}
+
+		injectScript('('+(function() {
+			console.log('Test injectScript');
+		}).toString()+')();');
+	</script>
+</body>
+</html>
