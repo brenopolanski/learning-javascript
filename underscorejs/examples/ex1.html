@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Example 1</title>
+</head>
+<body>
+
+	<script type="text/javascript" src="../lib/underscore-min.js"></script>
+	<script type="text/javascript">
+		_.each(['BA', 'MT', 'RJ', 'RN', 'RS'], function(estado) {
+			console.log(estado);
+		});
+
+		_.each({RJ:'Rio de Janeiro', SP:'São Paulo', RS:'Rio Grande do Sul'}, function(estado, sigla) {
+			console.log(estado + '/' + sigla);
+		});
+	</script>
+</body>
+</html>
