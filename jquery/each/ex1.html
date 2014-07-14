@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Example 1 - jQuery.each()</title>
+</head>
+<body>
+	<div id="example-one">
+		<div id="one"></div>
+		<div id="two"></div>
+		<div id="three"></div>
+		<div id="four"></div>
+		<div id="five"></div>
+	</div>
+
+	<script src="http://code.jquery.com/jquery.js"></script>
+	<script>
+	$('#example-one > div').each(function(index, value) {
+		console.log('div: ' + $(this).attr('id'));
+	});
+	</script>
+</body>
+</html>
